@@ -727,6 +727,7 @@ class AutoCleanupList:
 
             for index in reversed(indexes_to_delete):
                 del self._items[index]
+                del self._timestamps[index]
 
         self.clpf += 1
         self.itr += len(indexes_to_delete)
